@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OA — аккаунт</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+  <div class="account-menu">
+    <div class="account-user-block">
+      <div class="account-icon" aria-hidden="true"><span></span></div>
+      <span class="account-name" id="accountName"></span>
+      <form action="/logout" method="GET">
+        <button class="logout-button" id="logoutButton" type="submit">Выйти</button>
+      </form>
+    </div>
+  </div>
+
+  <main class="dashboard-home" aria-label="Главная страница">
+    <div class="logo" aria-label="Otar Aslabnek">
+      <span class="letter letter-o">O</span><span class="letter letter-a">A</span>
+    </div>
+  </main>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

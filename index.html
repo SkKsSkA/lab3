@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OA — вход и регистрация</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="card">
+    <div class="logo" id="logo">
+      <span class="letter letter-o">O</span>
+      <span class="letter letter-a">A</span>
+    </div>
+    <p class="brand-sub">Otar Aslabnek</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="login">Вход</button>
+      <button class="tab-btn" data-tab="register">Регистрация</button>
+    </div>
+
+    <div id="serverMsg" class="msg" data-msg=""></div>
+
+    <form id="loginForm" class="tab-content active" action="/login" method="POST" novalidate>
+      <label>Email
+        <input type="email" name="email" id="loginEmail" placeholder="you@gmail.com" required>
+      </label>
+      <span class="error" id="loginEmailError"></span>
+
+      <label>Пароль
+        <input type="password" name="password" id="loginPassword" minlength="6" required>
+      </label>
+      <span class="error" id="loginPasswordError"></span>
+
+      <label class="checkbox">
+        <input type="checkbox" name="remember" value="1"> Запомнить меня
+      </label>
+
+      <button type="submit">Войти</button>
+    </form>
+
+    <form id="registerForm" class="tab-content" action="/register" method="POST" novalidate>
+      <label>Имя
+        <input type="text" name="name" id="regName" required minlength="2">
+      </label>
+      <span class="error" id="regNameError"></span>
+
+      <label>Email
+        <input type="email" name="email" id="regEmail" placeholder="you@gmail.com" required>
+      </label>
+      <span class="error" id="regEmailError"></span>
+
+      <label>Пароль
+        <input type="password" name="password" id="regPassword" minlength="8" required>
+      </label>
+      <span class="error" id="regPasswordError"></span>
+
+      <label>Повторите пароль
+        <input type="password" name="password2" id="regPassword2" minlength="8" required>
+      </label>
+      <span class="error" id="regPassword2Error"></span>
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+
+   
+  </main>
+
+<script src="js/validate.js"></script>
+</body>
+</html>
