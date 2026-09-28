@@ -28,7 +28,7 @@ HTML, CSS, JavaScript и сервер на Node.js.
 Установите Node.js, затем выполните в cmd в папке проекта:
 
 ```bash
-cd/"project directory"
+cd "project directory"
 node server.js
 ```
 Откройте в браузере http://localhost:8000.
