@@ -32,3 +32,7 @@ cd "project directory"
 node server.js
 ```
 Откройте в браузере http://localhost:8000.
+
+## Отчет
+
+Включен в папку проекте под названием lab3webREPORT.docx
